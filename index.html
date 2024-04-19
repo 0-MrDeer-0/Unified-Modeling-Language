@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="fa-IR" dir="rtl" class="scroll-smooth">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Unified Modeling Language</title>
+        <link rel="shortcut icon" href="public/pictures/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="public/style/app.css">
+    </head>
+    <body class="bg-alic-blue font-regular text-base">
+        <header class="mt-10 mb-20">
+            <div class="container">
+                <nav class="flex items-center justify-between">
+                    <img class="w-20" src="public/pictures/Logo.png" alt="deer hero">
+                    <a href="https://github.com/0-MrDeer-0" class="button">
+                        گیت هابم
+                        <svg width="20" height="20" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 0.5C7.16 0.5 0 7.61169 0 16.3921C0 23.4243 4.58 29.3639 10.94 31.4696C11.74 31.6087 12.04 31.1319 12.04 30.7148C12.04 30.3373 12.02 29.0858 12.02 27.7549C8 28.4899 6.96 26.7815 6.64 25.8876C6.46 25.4307 5.68 24.0202 5 23.6428C4.44 23.3448 3.64 22.6098 4.98 22.59C6.24 22.5701 7.14 23.7421 7.44 24.2189C8.88 26.6226 11.18 25.9472 12.1 25.53C12.24 24.497 12.66 23.8017 13.12 23.4044C9.56 23.0071 5.84 21.6364 5.84 15.5577C5.84 13.8295 6.46 12.3992 7.48 11.2867C7.32 10.8894 6.76 9.2605 7.64 7.07534C7.64 7.07534 8.98 6.65817 12.04 8.70427C13.32 8.3467 14.68 8.16792 16.04 8.16792C17.4 8.16792 18.76 8.3467 20.04 8.70427C23.1 6.63831 24.44 7.07534 24.44 7.07534C25.32 9.2605 24.76 10.8894 24.6 11.2867C25.62 12.3992 26.24 13.8096 26.24 15.5577C26.24 21.6563 22.5 23.0071 18.94 23.4044C19.52 23.9011 20.02 24.8546 20.02 26.3445C20.02 28.47 20 30.1784 20 30.7148C20 31.1319 20.3 31.6286 21.1 31.4696C24.2768 30.4054 27.0373 28.378 28.9928 25.6731C30.9483 22.9682 32 19.7221 32 16.3921C32 7.61169 24.84 0.5 16 0.5Z" fill="white"/>
+                        </svg>                        
+                    </a>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <div class="container">
+                <section class="flex flex-col gap-10 items-center md:flex-row-reverse mb-16"  id="intro"> 
+                    <div class="max-w-72 md:w-5/12 object-cover">
+                        <img class="w-full h-full" src="public/pictures/banner.png" alt="Uml banner">
+                    </div>
+                    <div class="text-center space-y-4 md:text-right md:w-7/12">
+                        <h4 class="badge">مقدمه</h4>
+                        <h1 class="text-secondary text-3xl/10 font-bold">UML : زبان مدل سازی یکنواخت</h1>
+                        <p class="paragraph">UML یا زبان مدل‌سازی یکپارچه، یک زبان گرافیکی استاندارد برای مدل‌سازی، مستندسازی و تجسم سیستم‌های نرم‌افزاری است. این زبان به شما کمک می‌کند تا ساختار، رفتار و الزامات سیستم خود را به طور واضح و بصری نشان دهید.‍</p>
+                        <p class="paragraph">در اینجا ما قصد داریم به بررسی اجمالی Unified Modeling Language بپردازیم و همچنین ابزارهای قدرتمند در طراحی UML رو بررسی و منابعی برای یادگیری این زبان و ابزارهای آن را به شما معرفی کنیم.</p>
+                        <div class="flex flex-col items-center gap-5 mt-4 md:flex-row">
+                            <a href="#uml_defination" class=" w-2/3 md:w-40 button button--secondary">ادامه مطلب</a>
+                            <a href="#video" class=" w-2/3 md:w-40 button">
+                                تماشا ویدیو
+                                <svg width="24" height="24" viewBox="0 0 32 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M17 26.8681V24.3571H27C27.7956 24.3571 28.5587 24.0072 29.1213 23.3843C29.6839 22.7614 30 21.9166 30 21.0357V2.21428H31C31.2652 2.21428 31.5196 2.09764 31.7071 1.89001C31.8946 1.68238 32 1.40077 32 1.10714C32 0.813509 31.8946 0.531903 31.7071 0.324274C31.5196 0.116645 31.2652 0 31 0H1C0.734784 0 0.48043 0.116645 0.292893 0.324274C0.105357 0.531903 0 0.813509 0 1.10714C0 1.40077 0.105357 1.68238 0.292893 1.89001C0.48043 2.09764 0.734784 2.21428 1 2.21428H2V21.0357C2 21.9166 2.31607 22.7614 2.87868 23.3843C3.44129 24.0072 4.20435 24.3571 5 24.3571H15V26.8681C14.6187 27.1118 14.3207 27.488 14.1522 27.9383C13.9838 28.3887 13.9542 28.888 14.0681 29.3588C14.1821 29.8296 14.4332 30.2457 14.7825 30.5424C15.1318 30.8392 15.5597 31 16 31C16.4403 31 16.8682 30.8392 17.2175 30.5424C17.5668 30.2457 17.8179 29.8296 17.9319 29.3588C18.0458 28.888 18.0162 28.3887 17.8478 27.9383C17.6793 27.488 17.3813 27.1118 17 26.8681ZM4 2.21428V21.0357C4 21.3293 4.10536 21.6109 4.29289 21.8185C4.48043 22.0262 4.73478 22.1428 5 22.1428H27C27.2652 22.1428 27.5196 22.0262 27.7071 21.8185C27.8946 21.6109 28 21.3293 28 21.0357V2.21428H4Z" fill="white"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                <section id="video" class="pt-16 pb-16">
+                    <video class="aspect-video rounded-md" src="public/video/WHAT the hell is UML_.mp4" controls>
+                        <track label="English" kind="subtitles" srclang="en" src="public/video/[English (auto-generated)] WHAT the hell is UML [DownSub.com].vtt" default>
+                        Your browser does not support the video tag.
+                    </video>
+                </section>
+                <section id="uml_defination" class="space-y-16 py-16">
+                    <header class="text-center space-y-4">
+                        <h4 class="badge">معرفی زبان UML</h4>
+                        <h2 class="section-title">UML چیست و چرا باید از آن استفاده کنیم؟</h2>
+                    </header>
+                    <div class="flex flex-col items-center text-right space-y-8">
+                        <div class="max-w-72 object-cover">
+                            <img class="w-full h-full" src="public/pictures/modeling.png" alt="modeling"> 
+                        </div>
+                        <div>
+                            <h3 class="section-subtitle diamond-item text-right mb-4">مدلینگ (Modeling) :</h3>
+                            <p class="paragraph">مدل سازی راهی برای تجسم طراحی برنامه نرم افزاری شما و بررسی آن در برابر الزامات قبل از شروع تیم شما به کدنویسی است. به  همان شیوه ای که یک معمار قبل از شروع ساخت و ساز بر روی یک آسمان خراش  طرحی را ایجاد می کند، یک توسعه دهنده می تواند از نمودارهای مدل سازی برای  تثبیت و آزمایش آنچه که قرار است قبل از شروع به کدنویسی ایجاد کند،  استفاده کند. ترسیم نقشه اولین گام برای هر پروژه ای است و مدل سازی  بخشی ضروری از هر پروژه نرم افزاری کوچک یا بزرگ است. برای اینکه یک  برنامه به خوبی کار کند، باید به گونه ای طراحی شود که مقیاس  پذیری(scalability) را فراهم کند. با استفاده از نمودارهای زبان  مدلسازی یکپارچه (UML)، می‌توانید طراحی‌های سیستم‌های نرم‌افزاری خود را  قبل از اجرای کد، تجسم و تأیید کنید. </p>    
+                        </div>
+                    </div>
+                    <div class="flex flex-col items-center space-y-8">
+                        <div class="max-w-72 object-cover">
+                            <img class="w-full h-full" src="public/pictures/uml brand.png" alt="modeling"> 
+                        </div>
+                        <div>
+                            <h3 class="section-subtitle diamond-item text-right mb-4">مروری بر UML :</h3>
+                            <p class="paragraph">UML امروزه نقش یک زبان بین‌المللی را در زمینه‌ی تولید نرم‌افزار بر عهده دارد. اما اشتباه نکنید UML یک زبان برنامه نویسی نیست بلکه یک زبان مدل سازی گرافیکی برای مستند سازی و تجسم سیستم های نرم افزاری است که انواع نمودارهای مختلف را برای تجزیه و تحلیل سازه ها و طراحی رفتار سیستم ها ارائه می دهد. در واقع می توان گفت کهUML روشی برای به تصویر کشیدن یک برنامه‌ ی نرم ‌افزاری با استفاده از مجموعه ‌ای از نمودارهاست.</p>
+                            <p class="paragraph">از آنجا که UML یک ساختار معنایی و نحوی استاندارد ایجاد می کند، می توانید  از آن برای مدل سازی تقریباً هر نوع برنامه ای، صرف نظر از سخت افزار،  سیستم عامل، زبان برنامه نویسی خود استفاده کنید. UML به شما امکان  می دهد قبل از کدنویسی مدل های سیستم های نرم افزاری را هم از نظر ساختاری و هم از نظر رفتاری مشخص، تجسم و مستند کنید.</p>    
+                        </div>
+                    </div>
+                </section>
+                <section class="pb-16">
+                    <header class="text-center space-y-4">
+                        <h4 class="badge">نمودارهای UML</h4>
+                        <h2 class="section-title">انواع نمودارها در UML</h2>
+                        <p class="paragraph">زبان مدل‌سازی یکپارچه (UML) شامل مجموعه‌ای از نمودارهای بصری است که برای مدل‌سازی سیستم‌های نرم‌افزاری در تمام سطوح، از تجزیه و تحلیل الزامات تا پیاده‌سازی و استقرار، استفاده می‌شود. این نمودارها به شما کمک می‌کنند تا اجزا، ساختار، رفتار و روابط سیستم را به روشی واضح و قابل فهم مستند کنید. در مجموع ۱۴ نمودار داریم که آن ها را به سه دسته زیر تقسیم بندی میکنیم.</p>
+                    </header>
+                    <div class="grid grid-cols-1 gap-8 mt-10 sm:grid-cols-2 lg:grid-cols-3">
+                        <div class="p-8 bg-white flex flex-col gap-4 items-center text-center shadow-[0_4px_31px_0_rgba(0,0,0,0.15)] rounded-md">
+                            <img class="w-28 h-28" src="public/pictures/structure.png" alt="structure diagram">
+                            <h3 class="section-subtitle">نمودارهای ساختاری</h3>
+                            <p class="paragraph">نمودارهای ساختاری UML برای نمایش ساختار ایستا یک سیستم نرم‌افزاری، شامل اجزا و روابط بین آنها در یک نقطه خاص در زمان، استفاده می‌شوند. این دسته از نمودارها برای درک کلی از سیستم و نحوه سازماندهی آن مفید هستند.</p>
+                        </div>
+                        <div class="p-8 bg-white flex flex-col gap-4 items-center text-center shadow-[0_4px_31px_0_rgba(0,0,0,0.15)] rounded-md">
+                            <img class="w-28 h-28" src="public/pictures/behavior.png" alt="behavior diagram">
+                            <h3 class="section-subtitle">نمودارهای رفتاری</h3>
+                            <p class="paragraph">نمودارهای رفتاری UML برای نمایش رفتار پویا یک سیستم نرم‌افزاری، شامل نحوه تغییر و تعامل اجزا در طول زمان، استفاده می‌شوند. این دسته از نمودارها برای درک نحوه عملکرد سیستم و نحوه پاسخ آن به رویدادها مفید هستند.</p>
+                        </div>
+                        <div class="p-8 bg-white flex flex-col gap-4 items-center text-center shadow-[0_4px_31px_0_rgba(0,0,0,0.15)] rounded-md sm:col-span-full lg:col-span-1">
+                            <img class="w-28 h-28" src="public/pictures/Interactive.png" alt="Interactive diagram">
+                            <h3 class="section-subtitle">نمودارهای تعاملی</h3>
+                            <p class="paragraph">این نوع نمودار ترتیب زمانی که در آن اشیاء با یکدیگر پیام رد و بدل می کنند را نشان می دهد. هر شیء توسط یک خط عمودی در نمودار نشان داده می شود و پیام ها توسط فلش هایی که بین خطوط عمودی قرار دارند نشان داده می شوند.</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="pb-16">
+                    <header class="text-center space-y-4">
+                        <h4 class="badge">ابزارها</h4>
+                        <h2 class="section-title">معرفی برخی از بهترین نرم افزارهای برای طراحی UML</h2>
+                        <p class="paragraph">در پایین لیستی از بهترین محیط هایی که میتوان در آن نمودار های UML خود را طراحی معرفی کرده ایم. این محیط ها از مهندسی معکوس نیز پشتیبانی می کنند به این معنی که توانایی تبدیل نمودارهای UML به کدها برنامه نویسی را دارا می باشند.</p>
+                    </header>
+                    <div class="grid grid-cols-1 gap-8 mt-10 sm:grid-cols-2 lg:grid-cols-3">
+                        <div class="p-8 bg-white flex flex-col gap-4 items-center text-center shadow-[0_4px_31px_0_rgba(0,0,0,0.15)] rounded-md">
+                            <img class="w-28 h-28" src="public/pictures/rose.png" alt="rasnol rose">
+                            <h3 class="section-subtitle capitalize">rasnol rose</h3>
+                            <p class="paragraph mb-auto">یک ابزار مدل‌سازی UML است که توسط شرکت IBM توسعه یافته است. این نرم افزار به طور گسترده برای مدل‌سازی و طراحی سیستم‌های نرم‌افزاری پیچیده در میان مهندسان نرم‌افزار محبوب است.</p>
+                            <a class="paragraph text-primary" target="_blank" href="https://www.youtube.com/watch?v=70gCL_0CL5Q&list=PLkzojJqI-_cLVMesoUydKX_fdaL-ASudJ">یادگیرش رو استارت بزن</a>
+                        </div>
+                        <div class="p-8 bg-white flex flex-col gap-4 items-center text-center shadow-[0_4px_31px_0_rgba(0,0,0,0.15)] rounded-md">
+                            <img class="w-28 h-28" src="public/pictures/StarUML.png" alt="StarUML">
+                            <h3 class="section-subtitle capitalize">star uml</h3>
+                            <p class="paragraph mb-auto"> یک ابزار قدرتمند و همه‌کاره برای مدل‌سازی سیستم‌ها با استفاده از UML است. این نرم‌افزار طیف گسترده‌ای از ویژگی‌ها را برای کمک به طراحان و توسعه‌دهندگان نرم‌افزار در ایجاد مدل‌های دقیق و جامع را  ارائه می‌دهد.</p>
+                            <a class="paragraph text-primary" target="_blank" href="https://www.youtube.com/watch?v=4wX4RgqR2Xs&list=PLnpr13oHoA7bFp0lQA8koipz_Ie-WZtrh">یادگیرش رو استارت بزن</a>
+                        </div>
+                        <div class="p-8 bg-white flex flex-col gap-4 items-center text-center shadow-[0_4px_31px_0_rgba(0,0,0,0.15)] rounded-md sm:col-span-full lg:col-span-1">
+                            <img class="w-28 h-28" src="public/pictures/Enterprise Architect.png" alt="Enterprise Architect">
+                            <h3 class="section-subtitle capitalize">Enterprise Architect</h3>
+                            <p class="paragraph mb-auto">یک ابزار بسیار قدرتمند و محبوب در زمینه طراحی و توسعه نرم افزار. این نرم افزار از پلاگین های مختلفی پشتیبانی میکند که باعث گسترش ویژگی های آن می شود مثل خودکاری سازی کارها.</p>
+                            <a class="paragraph text-primary" target="_blank" href="https://www.youtube.com/watch?v=3RrHV7iKf1c&list=PLsiYAecFNMTzkPOOxY9ugLaOdm8wpqf0X">یادگیرش رو استارت بزن</a>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <header class="text-center space-y-4">
+                        <h4 class="badge">منابع آموزشی</h4>
+                        <h2 class="section-title">معرفی منابع آموزشی رایگان برای یادگیری زبان UML</h2>
+                        <p class="paragraph">یادگیری زبان UML به مهندسان نرم‌افزار کمک می‌کند تا به صورت موثرتر و سازنده‌تر در فرآیند توسعه نرم‌افزار و همچنین در ارتباط با سایر اعضای تیم‌های پروژه عمل کنند. در این قسمت برخی از منابع آموزشی فارسی و انگلیسی رایگان برای یادگیری این زبان به شما معرفی شده است.</p>
+                    </header>
+                    <div class="grid grid-cols-1 gap-8 mt-10 sm:grid-cols-2 lg:grid-cols-3">
+                        <div class="p-8 bg-white flex flex-col gap-4 items-center text-center shadow-[0_4px_31px_0_rgba(0,0,0,0.15)] rounded-md">
+                            <div class="rounded-md overflow-hidden h-52">
+                                <img class="w-full h-full" src="public/pictures/course 1.png" alt="freeCodeCamp">
+                            </div>
+                            <h3 class="section-subtitle capitalize">مدرس :‌  Beau Carnes</h3>
+                            <p class="paragraph">تعداد بازدید : ۱.۲ میلیون</p>
+                            <p class="paragraph">زبان : انگلیسی</p>
+                            <p class="paragraph">زمان : ۱ ساعت و ۳۰ دقیقه </p>
+                            <a class="mt-auto paragraph text-primary" target="_blank" href="https://www.youtube.com/watch?v=WnMQ8HlmeXc&pp=ygUIVU1MIEZyZWU%3D">مشاهده دوره</a>
+                        </div>
+                        <div class="p-8 bg-white flex flex-col gap-4 items-center text-center shadow-[0_4px_31px_0_rgba(0,0,0,0.15)] rounded-md">
+                            <div class="rounded-md overflow-hidden h-52">
+                                <img class="w-full h-full" src="public/pictures/course 2.png" alt="BEAU CARNES">
+                            </div>
+                            <h3 class="section-subtitle capitalize">مدرس :‌  Amit Chugh</h3>
+                            <p class="paragraph">تعداد بازدید : ۶۲۰</p>
+                            <p class="paragraph">زبان : انگلیسی</p>
+                            <p class="paragraph">زمان : ۲ ساعت و ۵۰ دقیقه </p>
+                            <a class="mt-auto paragraph text-primary" target="_blank" href="https://git.ir/udemy-master-uml-a-complete-unified-modeling-language-guide/">مشاهده دوره</a>
+                        </div>
+                        <div class="p-8 bg-white flex flex-col gap-4 items-center text-center shadow-[0_4px_31px_0_rgba(0,0,0,0.15)] rounded-md sm:col-span-full lg:col-span-1">
+                            <div class="rounded-md overflow-hidden h-52">
+                                <img class="w-full h-full" src="public/pictures/course 3.png" alt="BEAU CARNES">
+                            </div>
+                            <h3 class="section-subtitle capitalize">مدرس :‌  علی نیستانی</h3>
+                            <p class="paragraph">تعداد بازدید : ۳.۴ هزار</p>
+                            <p class="paragraph">زبان : فارسی</p>
+                            <p class="paragraph">زمان : ۳۰ دقیقه </p>
+                            <a class="mt-auto paragraph text-primary" target="_blank" href="https://www.youtube.com/watch?v=duQOxap0q_Y&list=PLnqTD8eCoAt-LkoHV7NL2-N-lWHVmk8i1">مشاهده دوره</a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer class=" mb-10 container flex flex-col items-center gap-4 rounded-t-md mt-14 p-4 md:py-8">
+            <p class="section-title">مرسی از همراهیتون 👋</p>
+            <a href="https://github.com/0-MrDeer-0" target="_blank">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="#4A72FF" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16 0.5C7.16 0.5 0 7.61169 0 16.3921C0 23.4243 4.58 29.3639 10.94 31.4696C11.74 31.6087 12.04 31.1319 12.04 30.7148C12.04 30.3373 12.02 29.0858 12.02 27.7549C8 28.4899 6.96 26.7815 6.64 25.8876C6.46 25.4307 5.68 24.0202 5 23.6428C4.44 23.3448 3.64 22.6098 4.98 22.59C6.24 22.5701 7.14 23.7421 7.44 24.2189C8.88 26.6226 11.18 25.9472 12.1 25.53C12.24 24.497 12.66 23.8017 13.12 23.4044C9.56 23.0071 5.84 21.6364 5.84 15.5577C5.84 13.8295 6.46 12.3992 7.48 11.2867C7.32 10.8894 6.76 9.2605 7.64 7.07534C7.64 7.07534 8.98 6.65817 12.04 8.70427C13.32 8.3467 14.68 8.16792 16.04 8.16792C17.4 8.16792 18.76 8.3467 20.04 8.70427C23.1 6.63831 24.44 7.07534 24.44 7.07534C25.32 9.2605 24.76 10.8894 24.6 11.2867C25.62 12.3992 26.24 13.8096 26.24 15.5577C26.24 21.6563 22.5 23.0071 18.94 23.4044C19.52 23.9011 20.02 24.8546 20.02 26.3445C20.02 28.47 20 30.1784 20 30.7148C20 31.1319 20.3 31.6286 21.1 31.4696C24.2768 30.4054 27.0373 28.378 28.9928 25.6731C30.9483 22.9682 32 19.7221 32 16.3921C32 7.61169 24.84 0.5 16 0.5Z" fill="#4A72FF"/>
+                </svg>
+            </a>
+        </footer>
+        <script>
+            const button = document.getElementById('hamerButton');
+            const element = document.getElementById('navbar-sticky');
+
+            button.addEventListener('click', function() {
+            if (element.style.display === 'none') {
+                element.style.display = 'block';
+            } else {
+                element.style.display = 'none';
+            }
+            });
+        </script>
+    </body>
+</html>

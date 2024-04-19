@@ -1,0 +1,14 @@
+{
+  "name": "uml",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch:tailwindcss": "npx tailwindcss -i ./src/input.css -o ./public/style/app.css --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.3"
+  }
+}

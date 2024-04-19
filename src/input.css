@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    @font-face {
+        font-family: 'IRANSansX-Black';
+        src: url("../fonts/IRANSansX-Black.woff") , format('woff'),
+            url("../fonts/IRANSansX-Black.woff2") , format('woff2');
+    }
+    @font-face {
+        font-family: 'IRANSansX-DemiBold';
+        src: url("../fonts/IRANSansX-DemiBold.woff") , format('woff'),
+            url("../fonts/IRANSansX-DemiBold.woff2") , format('woff2');
+    }
+    @font-face {
+        font-family: 'IRANSansX-Regular';
+        src: url("../fonts/IRANSansX-Regular.woff") , format('woff'),
+            url("../fonts/IRANSansX-Regular.woff2") , format('woff2');
+    }
+}
+
+@layer components{
+    .button{
+        @apply flex;
+        @apply px-4;
+        @apply gap-2;
+        @apply py-4;
+        @apply font-bold;
+        @apply rounded-md;
+        @apply text-white;
+        @apply bg-primary;
+        @apply items-center;
+        @apply cursor-pointer;
+        @apply justify-center;
+        @apply transition-all;
+        @apply hover:shadow-[0_30px_60px_0_rgba(74,114,255,0.25)];
+    }
+    .button--secondary{
+        @apply bg-primary/5;
+        @apply text-primary;
+        @apply hover:shadow-none;
+    }
+    .badge{
+        @apply text-sm;
+        @apply font-black;
+        @apply text-primary;
+    }
+    .section-title{
+        @apply text-2xl/10;
+        @apply font-black;
+        @apply text-secondary;
+    }
+    .section-subtitle{
+        @apply text-lg;
+        @apply font-bold;
+        @apply text-secondary;
+    }
+    .paragraph{
+        @apply text-base;
+        @apply font-regular;
+        @apply text-secondary/60;
+    }
+    .diamond-item{
+        @apply pr-6;
+        position: relative;
+    }
+    .diamond-item::before{
+        right: 0;
+        @apply w-5;
+        @apply h-5;
+        bottom: 3px;
+        content: '';
+        position: absolute;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url("../pictures/XDiamond.svg");
+    }
+}
